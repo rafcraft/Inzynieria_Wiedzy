@@ -10,11 +10,11 @@ with open("australian.dat", "r") as plik:
     print(lista)
     print("\n")
 
-def Euklides(lx):
+def Euklides(lista):
     wynik = 0
-    for x in range(len(lx)-1):
-        for y in range(len(lx)-1):
-            wynik += (lx[x] - lx[x])**2
+    for x in range(len(lista)-1):
+        for y in range(len(lista)-1):
+            wynik += (lista[x] - lista[x])**2
             return math.sqrt(wynik)
 print(Euklides(lista))
 
